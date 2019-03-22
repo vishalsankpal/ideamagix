@@ -1,0 +1,395 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+main header{
+  background-color: #007064;
+}
+main header .custom{
+  margin: 0 auto;
+}
+main header p{
+  display: inline-block;
+  padding: 0 6px;
+  color: #cccfe8;
+  font-size: 16px;
+  margin-bottom:  1rem;
+  margin-top: 1rem;
+  font-family: serif;
+  font-weight: 400;
+}
+main header .custom .fas p{
+  font-family: serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+main header .fas{
+  color: #cccfe8;
+  
+}
+/*navigation*/
+main section nav ul li a {
+  font-size:18px;
+  padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    font-weight: 500;
+
+    
+}
+
+
+main section .bg-light{
+  
+  background-color: #fffdfd !important;
+    color: white;
+    width: 100%;
+}
+main nav #navbarSupportedContent .navbar-nav .nav-item .nav-link{
+  padding: 1.5rem 1rem;
+}
+main nav #navbarSupportedContent .searchbar .serchicon{
+  width: 285px;
+    border: 0px solid black;
+    background-color:  #fffdfd !important;
+}
+main nav #navbarSupportedContent .searchbar .serchicon .fas{
+  font-size: 18px;
+}
+/*carosal*/
+.carousel-indicators{
+  margin-left: 10%;
+  position: absolute;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+
+    bottom: 15%;
+    left: 0;
+    z-index: 15;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+}
+.carousel-control-prev{
+  width: 6%;
+  color: white;
+}
+.carousel-control-next{
+  width: 6%;
+
+}
+.carousel-control-next-icon{
+  height: 52px;
+    width: 42px;
+}
+.carousel-control-prev-icon{
+  height: 52px;
+    width: 42px;
+}
+main section .carousel-indicators li{
+  width: 12px;
+    height: 12px;
+    border-radius: 50%; 
+}
+main section .carosal-container{
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+main section .carosal-container .thought{
+  position: absolute;
+  
+    top: 35%;
+    left: 7%;
+    color: white;
+}
+main section .thought h1{
+  font-size: 30px;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*grid1*/
+main section .custom{
+  position: relative;
+  top: -80px;
+  background-color: white;
+  border: 1px solid #f7f7f7;
+  -webkit-box-shadow: 0px -9px 58px #80808047;
+          box-shadow: 0px -9px 58px #80808047;
+}
+main section .custom h1{
+  font-size: 30px;
+
+  color: #07594b;
+
+}
+main section .custom .gridcolume{
+  border: 1px solid #f7f7f7;
+  padding: 3%;
+  -webkit-transition: -webkit-transform 1.0s;
+  transition: -webkit-transform 1.0s;
+  -o-transition: transform 1.0s;
+  transition: transform 1.0s;
+  transition: transform 1.0s, -webkit-transform 1.0s;
+  overflow: hidden;
+}
+/*main section .custom .gridcolume:hover{
+  transform: scale(1.1);
+  border: 0px solid #f7f7f7;
+  overflow: hidden;
+}*/
+main section .custom p{
+  font-size: 20px;
+  color: #b5b7c3;
+}
+main section .custom .gridcolume p i{
+  color: #fee21c;
+  font-size: 50px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #017767;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 14px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\2192';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.videocustom{
+  position: relative;
+}
+.videobtn{
+  color: black;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border: 0;
+    cursor: pointer;
+    background: #ffffff4f;
+    border: 1px solid #308f7b;
+}
+.videobtn i{
+  font-weight: 900;
+    font-size: 25px;
+    color: #463c3c;
+}
+/*let numbers speak for us*/
+.counter{
+  color: black !important;
+}
+.right-border{
+  border: 1px solid #0000002e;
+    
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+main section .let-numbers-speaks{
+  text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #19181d
+}
+main section .successful-complete-project-img{
+  height: 75px;
+  width: auto;
+  padding: 0 8px;
+}
+main section .number-of-successful-project{
+  display: inline-block;
+  font-family: 'Lato';
+  font-weight: 900;
+}
+main section .text-part{
+      margin-left: 26%;
+      font-weight: 400;
+}
+/*our product*/
+main section .our-products{
+  color: #3f4a66;
+  text-align: center;
+  font-weight: 400;
+}
+main section .product-aim{
+  text-align: center;
+  color: #423e3ec4;
+  font-weight: 400;
+}
+
+main section .product-grid{
+    padding: 9px;
+    background-color: #e0d9d929;
+    border-radius: 5px;
+}
+main section .product-grid .cards-custom{
+  -webkit-box-shadow: 0px 0px 10px darkgrey;
+          box-shadow: 0px 0px 10px darkgrey;
+}
+main section .product-grid .cards-custom .custom-product-card{
+  height: 200px;
+}
+/*contact us*/
+.bg{
+  position: relative;
+  background:url(../images/contact3-compressor.png) no-repeat;
+  height: 250px;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+}
+main section .delivaring-innovation{
+  display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    /*transform: translate(-50%,-50%);*/
+    top: 25%;
+    left: 2%;
+}
+main section .delivaring-innovation h5,h1,p{
+  color : white;
+}
+main section .bg .contact-us{
+  display: inline-block;
+  position: absolute;
+  
+  top: 32%;
+  right: 10%;
+}
+main section .cntac{
+  background-color: white !important;
+  color: black !important;
+}
+/*carosuel*/
+ .owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  -webkit-transition: margin 0.4s ease;
+  -o-transition: margin 0.4s ease;
+  transition: margin 0.4s ease;
+
+}
+.owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+}
+.owl-item:not(.center){
+ opacity: .25; 
+
+}
+.owl-item:not(.center) > div:hover {
+  opacity: .75;
+  
+}
+main section .owl-carousel .owl-car{
+  height: 150px;
+ }
+ /*footer*/
+ footer .footer-custom{
+  position: relative;
+  background-color: #d7eae8;
+  padding-left: 3%;
+    padding-right: 3%;
+ }
+ footer .footer-custom .footer-btn-containt{
+  margin: 3% auto;
+ }
+footer .line{
+  width: 98%;
+  height: 1px;
+  background-color: #96a9a7;
+  padding: 0;
+  margin: 0 auto;
+
+}
+ul{
+  padding: 0;
+}
+ul li{
+  
+  list-style: none;
+}
+.address{
+  color:black;
+  margin-bottom: 0;
+}
+footer .footer2{
+  background-color: #006b5b;
+}
+.social-icons{
+  float: right ;
+}
+main section .videocustom .video-editing{
+  width: 100%;
+  height: 550px;
+}
