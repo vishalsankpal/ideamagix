@@ -1,6 +1,8 @@
 body{
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 main header{
   background-color: #007064;
@@ -31,37 +33,35 @@ main header .fas{
 main section nav ul li a {
   font-size:18px;
   padding-right: 1rem !important;
-    padding-left: 1rem !important;
-    font-weight: 500;
-
-    
+  padding-left: 1rem !important;
+  font-weight: 500;
 }
-
-
 main section .bg-light{
-  
   background-color: #fffdfd !important;
-    color: white;
-    width: 100%;
+  color: white;
+  width: 100%;
 }
 main nav #navbarSupportedContent .navbar-nav .nav-item .nav-link{
   padding: 1.5rem 1rem;
 }
 main nav #navbarSupportedContent .searchbar .serchicon{
   width: 285px;
-    border: 0px solid black;
-    background-color:  #fffdfd !important;
+  border: 0px solid black;
+  background-color:  #fffdfd !important;
 }
 main nav #navbarSupportedContent .searchbar .serchicon .fas{
   font-size: 18px;
 }
 /*carosal*/
+.carousel {
+  padding-top: 56px;
+}
 .carousel-indicators{
   margin-left: 10%;
   position: absolute;
   -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
 
     bottom: 15%;
     left: 0;
@@ -80,7 +80,7 @@ main nav #navbarSupportedContent .searchbar .serchicon .fas{
 }
 .carousel-control-next{
   width: 6%;
-
+  z-index: 2;
 }
 .carousel-control-next-icon{
   height: 52px;
@@ -99,13 +99,21 @@ main section .carosal-container{
   position: relative;
   padding-left: 0;
   padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 main section .carosal-container .thought{
   position: absolute;
-  
-    top: 35%;
-    left: 7%;
     color: white;
+    left: 65px;
 }
 main section .thought h1{
   font-size: 30px;
@@ -118,7 +126,6 @@ main section .thought h1{
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 .btn span:after {
   content: '\00bb';
   position: absolute;
@@ -129,11 +136,9 @@ main section .thought h1{
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 .btn:hover span {
   padding-right: 25px;
 }
-
 .btn:hover span:after {
   opacity: 1;
   right: 0;
@@ -149,9 +154,7 @@ main section .custom{
 }
 main section .custom h1{
   font-size: 30px;
-
   color: #07594b;
-
 }
 main section .custom .gridcolume{
   border: 1px solid #f7f7f7;
@@ -163,11 +166,6 @@ main section .custom .gridcolume{
   transition: transform 1.0s, -webkit-transform 1.0s;
   overflow: hidden;
 }
-/*main section .custom .gridcolume:hover{
-  transform: scale(1.1);
-  border: 0px solid #f7f7f7;
-  overflow: hidden;
-}*/
 main section .custom p{
   font-size: 20px;
   color: #b5b7c3;
@@ -176,7 +174,6 @@ main section .custom .gridcolume p i{
   color: #fee21c;
   font-size: 50px;
 }
-
 .button {
   border-radius: 4px;
   background-color: #017767;
@@ -192,7 +189,6 @@ main section .custom .gridcolume p i{
   cursor: pointer;
   margin: 5px;
 }
-
 .button span {
   cursor: pointer;
   display: inline-block;
@@ -201,7 +197,6 @@ main section .custom .gridcolume p i{
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 .button span:after {
   content: '\2192';
   position: absolute;
@@ -212,17 +207,26 @@ main section .custom .gridcolume p i{
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 .button:hover span {
   padding-right: 25px;
 }
-
 .button:hover span:after {
   opacity: 1;
   right: 0;
 }
+/* video section */
 .videocustom{
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .videobtn{
   color: black;
@@ -230,8 +234,8 @@ main section .custom .gridcolume p i{
     border-radius: 4px;
     position: absolute;
     -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
     border: 0;
@@ -244,13 +248,15 @@ main section .custom .gridcolume p i{
     font-size: 25px;
     color: #463c3c;
 }
+main section .videocustom .video-editing{
+  width: 100% !important;
+}
 /*let numbers speak for us*/
 .counter{
   color: black !important;
 }
 .right-border{
   border: 1px solid #0000002e;
-    
     border-top: 0;
     border-bottom: 0;
     border-left: 0;
@@ -272,7 +278,6 @@ main section .number-of-successful-project{
   font-weight: 900;
 }
 main section .text-part{
-      margin-left: 26%;
       font-weight: 400;
 }
 /*our product*/
@@ -300,38 +305,32 @@ main section .product-grid .cards-custom .custom-product-card{
   height: 200px;
 }
 /*contact us*/
-.bg{
+.contacts{
   position: relative;
-  background:url(../images/contact3-compressor.png) no-repeat;
-  height: 250px;
+  background:url('../images/contact3-compressor.png') no-repeat;
   background-size: cover;
   width: 100%;
   background-attachment: fixed;
+  background-position: center;
 }
-main section .delivaring-innovation{
-  display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    /*transform: translate(-50%,-50%);*/
-    top: 25%;
-    left: 2%;
+.c-grid{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 main section .delivaring-innovation h5,h1,p{
   color : white;
-}
-main section .bg .contact-us{
-  display: inline-block;
-  position: absolute;
-  
-  top: 32%;
-  right: 10%;
 }
 main section .cntac{
   background-color: white !important;
   color: black !important;
 }
 /*carosuel*/
- .owl-item > div {
+.owl-item > div {
   cursor: pointer;
   margin: 6% 8%;
   -webkit-transition: margin 0.4s ease;
@@ -353,18 +352,21 @@ main section .cntac{
 }
 main section .owl-carousel .owl-car{
   height: 150px;
- }
- /*footer*/
- footer .footer-custom{
-  position: relative;
+}
+/* mega footer */
+.mega-footer{
   background-color: #d7eae8;
-  padding-left: 3%;
-    padding-right: 3%;
- }
- footer .footer-custom .footer-btn-containt{
-  margin: 3% auto;
- }
-footer .line{
+  padding: 2rem 0;
+}
+.cntac1{
+  background-color: white;
+  color: black;
+}
+.cntac2{
+  background: yellow;
+  color: white;
+}
+.line{
   width: 98%;
   height: 1px;
   background-color: #96a9a7;
@@ -376,20 +378,58 @@ ul{
   padding: 0;
 }
 ul li{
-  
   list-style: none;
 }
 .address{
   color:black;
   margin-bottom: 0;
 }
-footer .footer2{
+footer{
   background-color: #006b5b;
 }
-.social-icons{
-  float: right ;
+.fa{
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+main section .navbar{
+  position: absolute !important;
+  z-index: 999;
+}
+.contact-us{
+  text-align: center;
+}
+.right-border{
+  border: none !important;
+}
+
+footer .footer-custom .footer-btn-containt{
+  text-align: center !important;
 }
 main section .videocustom .video-editing{
-  width: 100%;
-  height: 550px;
+    width: 100% !important;
+    height: 400px !important;
 }
+.respons-font{
+  font-size: 15px;
+}
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+main section .navbar{
+  position: absolute !important;
+  z-index: 999;
+}
+
+main section .bg .contact-us{
+  top: 32% !important;
+  right: 1% !important;
+}
+.right-border{
+  border: none !important;
+}
+} 
