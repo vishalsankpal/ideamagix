@@ -45,6 +45,7 @@ main nav #navbarSupportedContent .navbar-nav .nav-item .nav-link{
   padding: 1.5rem 1rem;
 }
 main nav #navbarSupportedContent .searchbar .serchicon{
+  cursor: pointer;
   width: 285px;
   border: 0px solid black;
   background-color:  #fffdfd !important;
